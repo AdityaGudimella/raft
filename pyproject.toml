@@ -8,8 +8,15 @@ authors = ["Adi Gudimella <adgudime@microsoft.com>"]
 python = "3.11"
 attrs = "22.2.0"
 pytest = "7.2.1"
+structlog = "^22.3.0"
+rich = "^13.2.0"
+tqdm = "^4.64.1"
+pydantic = "^1.10.4"
+typer = "^0.7.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.scripts]
+raft = "raft.cli:app"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
